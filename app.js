@@ -77,7 +77,48 @@ const questions = inquirer.prompt([
         type: 'number',
         message: `What is the manager's office number?`,
         name: 'Manager Office Number',
-    }
+    },
+    {
+        type: 'input',
+        message: `What is the Engineer's name?`,
+        name: 'Engineer',
+    },
+    {
+        type: 'number',
+        message: `What is the Engineer's id number?`,
+        name: 'Engineer Id',
+    },
+    {
+        type: 'input',
+        message: `What is the Engineer's email?`,
+        name: 'Engineer Email',
+    },
+    {
+        type: 'input',
+        message: `What is the Engineer's GitHub username?`,
+        name: 'Engineer GitHub',
+    },
+    {
+        type: 'input',
+        message: `What is the Intern's name?`,
+        name: 'Intern',
+    },
+    {
+        type: 'number',
+        message: `What is the Intern's id number?`,
+        name: 'Intern Id',
+    },
+    {
+        type: 'input',
+        message: `What is the Intern's email?`,
+        name: 'Intern Email',
+    },
+    {
+        type: 'input',
+        message: `What is the Intern's school?`,
+        name: 'Intern School',
+    },
+    
 ]);
 
 // and to create objects for each team member (using the correct classes as blueprints!)
