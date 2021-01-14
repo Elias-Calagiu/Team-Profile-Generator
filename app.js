@@ -12,6 +12,74 @@ const render = require("./lib/htmlRenderer");
 
 
 // Write code to use inquirer to gather information about the development team members,
+// const employeeQuestions = inquirer.prompt([
+//     {
+//         type: 'input',
+//         message: `What is the employee's name?`,
+//         name: 'Employee',
+//     },
+//     {
+//         type: 'number',
+//         message: `What is the employee's id number?`,
+//         name: 'Employee Id',
+//     },
+//     {
+//         type: 'input',
+//         message: `What is the employee's email?`,
+//         name: 'Employee Email',
+//     },
+//     {
+//         type: 'list',
+//         message: `What is the role?`,
+//         name: 'Employee Role',
+//         choices: ["Engineer", "Intern"]
+//     }
+// ]);
+
+const questions = inquirer.prompt([
+    {
+        type: 'input',
+        message: `What is the employee's name?`,
+        name: 'Employee',
+    },
+    {
+        type: 'number',
+        message: `What is the employee's id number?`,
+        name: 'Employee Id',
+    },
+    {
+        type: 'input',
+        message: `What is the employee's email?`,
+        name: 'Employee Email',
+    },
+    {
+        type: 'list',
+        message: `What is the role?`,
+        name: 'Employee Role',
+        choices: ["Engineer", "Intern"]
+    },
+    {
+        type: 'input',
+        message: `What is the manager's name?`,
+        name: 'Manager',
+    },
+    {
+        type: 'number',
+        message: `What is the manager's id number?`,
+        name: 'Manager Id',
+    },
+    {
+        type: 'input',
+        message: `What is the manager's email?`,
+        name: 'Manager Email',
+    },
+    {
+        type: 'number',
+        message: `What is the manager's office number?`,
+        name: 'Manager Office Number',
+    }
+]);
+
 // and to create objects for each team member (using the correct classes as blueprints!)
 
 // After the user has input all employees desired, call the `render` function (required
